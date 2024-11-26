@@ -1,0 +1,122 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>edai</title>
+    <link rel="stylesheet" href="css/donate2.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    
+
+</head>
+<body>
+ 
+
+<!-- nav bar  -->
+
+<nav>
+    <a class="logo" href="/index2">
+        <img src="img/donate/logo-%20nav%202.svg" alt="logo">
+    </a>
+    <ul class="nav-bar">
+        <li class="nav-bar_item"><a href="tel:+919766030221"><i class="fas fa-phone "></i></a></li>
+        <li class="nav-bar_item"><a href="https://wa.me/9766030221"><i class="fa-brands fa-whatsapp footfa-brands"></i></a></li>        
+</nav>
+
+<div class="topshape">
+    <img src="img/donate/2.png" alt="" class="topimg">
+    <img src="img/donate/3.png" alt="" class="topimg">
+    <img src="img/donate/4.png" alt="" class="topimg">
+</div>
+
+<div>
+    <h1  class="head">Please enter below details</h1>
+</div>
+
+<div class="maindiv">
+    <div class="parentdiv">
+
+        <form action="/submit-info" method="post">
+            <div class="namediv">
+                <div class="fname">
+                    <label for="fname">First Name</label><br>
+                    <input type="text" id="fname" name="fname">
+                </div>
+                <div class="lname">
+                    <label for="lname">Last Name</label><br>
+                    <input type="text" id="lname" name="lname" >
+                </div>
+            </div>
+            <div class="emaildiv">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" >
+            </div>
+            <div class="phonenodiv">
+                <div class="primaryno">
+                    <label for="phone">Phone Number</label><br>
+                    <input type="tel" id="phone" name="phone" >
+                </div>
+                <div class="alternateno">
+                    <label for="phone2">Alternate Phone number</label><br>
+                    <input type="tel" id="phone2" name="phone2" required>
+                </div>
+            </div>
+            
+            <div class="line">
+                <hr>
+            </div>
+        
+            <label for="" class="addhead">Pickup Address</label>
+        
+            <div class="address">
+                <div class="flatno">
+                    <label for="flat">Flat-number/Room-number</label><br>
+                    <input type="text" id="flat" name="flat" required>
+                </div>
+                <div class="Addl1">
+                    <label for="addline">Address</label><br>
+                    <textarea id="addline" name="addline" rows="5" cols="93" required></textarea><br>
+                </div>
+                <div class="landmark">
+                    <label for="land">Nearby Landmark (optional)</label><br>
+                    <input type="text" id="land" name="land" class="medinput">
+                </div>
+                <div class="citystate">
+                    <div class="cityname">
+                        <label for="city">City</label><br>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div class="statename">
+                        <label for="state">State</label><br>
+                        <input type="text" id="state" name="state" required>
+                    </div>
+                </div>
+                <div class="pincode">
+                    <label for="pincode">PIN Code</label><br>
+                    <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" title="PIN code should be 6 digits long" required>
+                </div>
+                <div class="note">
+                    <label for="optnote">Any Pick-up Note (optional)</label><br>
+                    <textarea id="optnote" name="optnote" rows="5" cols="93"></textarea>
+                </div>
+            </div>
+            <input type="hidden" name="donationId" value="<%=donationId %>">
+
+            <div class="buttons">
+                <button type="button" onclick="window.history.back();">Previous</button>
+                <button type="submit" value="submit" class="nextbut">Next</button>
+            </div>
+        </form>
+        
+
+</body>
+</html>
+

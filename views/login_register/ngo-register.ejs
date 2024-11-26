@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>edai</title>
+    <link rel="stylesheet" href="css/login_register/ngo-register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+ 
+
+<!-- nav bar  -->
+
+<nav>
+    <a class="logo" href="#">
+        <img src="img/logo-nav.svg" alt="logo">
+    </a>
+    <ul class="nav-bar">
+        <li class="nav-bar_item"><a href="tel:+919766030221"><i class="fas fa-phone "></i></a></li>
+        <li class="nav-bar_item"><a href="https://wa.me/9766030221"><i class="fa-brands fa-whatsapp footfa-brands"></i></a></li>        
+</nav>
+
+
+<div>
+    <h1  class="head">NGO Registration</h1>
+</div>
+
+<div class="maindiv">
+    <div class="parentdiv">
+
+        <form method="post" action="/ngo-register" enctype="multipart/form-data" id="myForm" >
+            <div class="namediv">
+                <div class="fname">
+                    <label for="name">Name of Ngo</label><br>
+                    <input type="text" id="name" name="name" value="Avishkar" required>
+                </div>
+                <div class="lname">
+                    <label for="name">Registration Number</label><br>
+                    <input type="tel" id="name" name="registration_number" value="" required>
+                </div>
+            </div>
+            <div class="emaildiv">
+                <label for="email">Email </label><br>
+                <input type="email" id="email" name="email" required >
+            </div>
+            <div class="phonenodiv">
+                <div class="primaryno">
+                    <label for="phone">Phone Number</label><br>
+                    <input type="tel" id="phone" name="phone" required >
+                </div>
+                <div class="alternateno">
+                    <label for="phone2">Alternate Phone number</label><br>
+                    <input type="tel" id="phone2" name="phone2" required>
+                </div>
+            </div>
+            
+            <div class="line">
+                <hr>
+            </div>
+
+            <label for="" class="addhead">Address</label>
+
+
+            <div class="address">
+                
+                <div class="Office Address">
+                    <label for="addline">NGO Address</label><br>
+                    <textarea id="addline" name="addline" rows="5" cols="93" required></textarea><br>
+             
+                </div>
+                <div class="landmark">
+                    <label for="land" class="extramargin">Nearby Landmark(optional) </label><br>
+                    <input type="text" id="land" name="land" class="medinput" required>
+                </div>
+
+                <div class="citystate">
+                    <div class="cityname">
+                        <label for="city">City</label><br>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div class="statename">
+                        <label for="state">State</label><br>
+                        <input type="text" id="state" name="state" required>
+                    </div>
+                </div>
+                <div class="pincode">
+                    <label for="pincode">PIN Code:</label><br>
+                    <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" title="PIN code should be 6 digits long" required>
+                    
+                </div>
+
+                <div class="line">
+                    <hr>
+                </div>
+
+                <div class="note">
+                    <label for="optnote">Tell us about your NGO</label><br>
+                    <textarea id="optnote" name="optnote" rows="5" cols="93"></textarea>
+                </div>
+
+                
+            
+                <div class="url">
+                    <label for="url">Website Url</label><br>
+                    <input type="url" id="url" name="url" class="medinput" required>
+                </div>
+                <div class="socialsurl">
+                    <label for="socialsurl" >Social handle Url</label><br>
+                    <input type="url" id="socialsurl" name="socialsurl" class="medinput smurl" required>
+                </div>
+
+
+                <div class="fileupload">
+                    <label for="file" class="upfile">Upload your Registration Certificate: </label>
+                    <input type="file" id="file" name="file" required>
+                </div>
+                <div class="terms">
+                    <label>
+                        <input type="checkbox" id="terms" name="terms" required class="checkbox">
+                        I agree to the <a href="terms_and_conditions.html" target="_blank">Terms and Conditions</a>
+                    </label>
+                </div>
+                
+            </div>
+
+    </div>
+
+</div>
+<div class="buttons"> 
+    
+    <button type="submit" value="submit" class="nextbut">Register</button>
+</div>
+</form>
+
+
+</body>
+<script>
+  document.getElementById("myForm").addEventListener("submit", function (event) {
+   alert("We Will verify your Details and your Ngo In next 24 Hours");
+  });
+  
+</script>
+</html>
+

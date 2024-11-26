@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>EDAI</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="icon" href="img/logo.svg" type="image/x-icons" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="contact">
+      <div class="detail">
+        <a
+          href="https://www.instagram.com/suraj_gitte_6708?igsh=OXQ5bGJhZXhyMjR2"
+          target="_blank"
+        >
+          <i class="fa-brands fa-square-instagram"></i
+        ></a>
+        <a
+          href="http://www.linkedin.com/in/suraj-gitte-7b71a7288"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Suraj6708" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="#">+91 9860126708</a>
+      </div>
+
+      <div class="login">
+        <a href="/ngo-login" class="logins">NGO Login</a>
+        <a href="/user-login" class="logins">User Login</a>
+      </div>
+    </div>
+
+    <!-- nav bar  -->
+
+    <%- include("partialls/navbar.ejs") %>
+
+    <!-- corousel -->
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="img/corousel-1.jpg" style="width: 100%" />
+      </div>
+      <div class="mySlides fade">
+        <img src="img/corousel-2.jpg" style="width: 100%" />
+      </div>
+      <div class="mySlides fade">
+        <img src="img/corousel-4.jpg" style="width: 100%" />
+      </div>
+      <div class="mySlides fade">
+        <img src="img/corousel-5.jpg" style="width: 100%" />
+      </div>
+
+      <!-- Add more slides as needed -->
+
+      <div class="overlay">
+        <h1>Uniting NGOs, Empowering Change.</h1>
+        <p>
+          Welcome to our platform, where we unite NGOs worldwide under one
+          digital roof, empowering them to collaborate, share resources, and
+          amplify their impact. Together, we're driving meaningful change and
+          shaping a brighter future for communities across the globe.
+        </p>
+        <a href="/user-login"
+          ><button class="donation" id="donateButton">DONATE</button></a
+        >
+      </div>
+    </div>
+
+    <!--welcome to doorstep sonation  -->
+
+    <div class="welcome shadow" data-aos="fade-up">
+      <h1 class="heading">WELCOME TO DOORSTEP DONATION</h1>
+      <div class="border"></div>
+
+      <h2>Feel the Power of Giving!</h2>
+
+      <div class="boxes" data-aos="fade-left">
+        <div class="box">
+          <div class="img">
+            <img src="img/connect.svg" alt="" />
+          </div>
+          <h2>Collaboration</h2>
+          <P
+            >Empowering NGOs to unite and amplify their efforts through
+            collaborative partnerships.</P
+          >
+        </div>
+
+        <div class="box">
+          <div class="img">
+            <img src="img/20.svg" alt="" />
+          </div>
+          <h2>Impact</h2>
+          <P
+            >Driving meaningful change by showcasing the tangible impact of NGO
+            initiatives on communities.</P
+          >
+        </div>
+
+        <div class="box">
+          <div class="img">
+            <img src="img/21.svg" alt="" />
+          </div>
+          <h2>Community</h2>
+          <P>Uniting NGOs for social progress and humanitarian causes.</P>
+        </div>
+      </div>
+    </div>
+
+    <!--recently added ngos -->
+
+    <div class="scroller shadow" data-direction="right" data-speed="slow">
+      <h1 class="heading">OUR CORPORATE CLIENTS</h1>
+      <div class="border"></div>
+
+      <div class="scroller__inner" data-aos="zoom-in-up">
+        <img src="img/tata.svg" alt="" />
+        <img src="img/bmw.svg" alt="" />
+        <img src="img/apple.svg" alt="" />
+        <img src="img/nike.svg" alt="" />
+        <img src="img/twitter.svg" alt="" />
+        <img src="img/google.svg" alt="" />
+      </div>
+    </div>
+
+    <!--   no of volunters and all -->
+
+    <div class="counter shadow" data-aos="fade-up">
+      <h1 class="heading">OUR PARTNERS</h1>
+      <div class="border"></div>
+
+      <div class="wrapper">
+        <div class="con2" data-aos="fade-right">
+          <i class="fa-solid fa-users"></i>
+          <span class="num" data-val="100">000</span>
+          <span class="text">NO OF VOLUNTERS</span>
+          <div class="overlay"></div>
+        </div>
+
+        <div class="con2" data-aos="fade-right">
+          <i class="fa-solid fa-handshake"></i>
+          <span class="num" data-val="340">000</span>
+          <span class="text">DONARS</span>
+          <div class="overlay"></div>
+        </div>
+
+        <div class="con2" data-aos="fade-right">
+          <i class="fa-solid fa-house-chimney-crack"></i>
+          <span class="num" data-val="225">000</span>
+          <span class="text">NGO'S</span>
+          <div class="overlay"></div>
+        </div>
+
+        <div class="con2" data-aos="fade-right">
+          <i class="fa-solid fa-hand-holding-dollar"></i>
+          <span class="num" data-val="280">000</span>
+          <span class="text">DONATIONS</span>
+          <div class="overlay"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--testinomials -->
+
+    <div class="Testimonials shadow" data-aos="fade-up">
+      <div class="inner">
+        <h1 class="heading">Testimonials</h1>
+        <div class="border"></div>
+
+        <div class="row">
+          <div class="col" data-aos="fade-left">
+            <div class="con1">
+              <img src="img/user1.svg" />
+              <h5>
+                - Sarah Smith, Director of Outreach, Community Builders
+                Foundation
+              </h5>
+              <p>
+                "Being part of this NGO platform has been truly transformative
+                for our organization. The collaborative opportunities provided
+                here have allowed us to expand our reach and impact in ways we
+                never thought possible. Together, we're making a real difference
+                in the world."
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="con1" data-aos="fade-left">
+              <img src="img/user2.svg" />
+              <h5>- John Doe, Founder, Humanitarian Aid Network</h5>
+              <p>
+                "I cannot overstate the value of connecting with fellow NGOs
+                through this platform. The support and camaraderie within this
+                community are unparalleled. Through shared resources and
+                collective efforts, we've been able to tackle some of the most
+                pressing issues
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--footer ........ -->
+
+    <%- include("partialls/footer.ejs") %>
+  </body>
+</html>
+<script src="js/index.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+  crossorigin="anonymous"
+></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 120,
+    duration: 400,
+  });
+</script>

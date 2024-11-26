@@ -1,0 +1,101 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>edai</title>
+    <link rel="stylesheet" href="css/donate3.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    
+
+</head>
+<body>
+ 
+
+<!-- nav bar  -->
+
+<nav>
+    <a class="logo" href="index2">
+        <img src="img/logo-nav.svg" alt="logo">
+    </a>
+    <ul class="nav-bar">
+        <li class="nav-bar_item"><a href="tel:+919766030221"><i class="fas fa-phone "></i></a></li>
+        <li class="nav-bar_item"><a href="https://wa.me/9766030221"><i class="fa-brands fa-whatsapp footfa-brands"></i></a></li>        
+</nav>
+
+<div class="topshape">
+    <img src="img/donate/2.png" alt="" class="topimg">
+    <img src="img/donate/3.png" alt="" class="topimg">
+    <img src="img/donate/4.png" alt="" class="topimg">
+</div>
+
+<div>
+    <h1  class="head">Please enter below details</h1>
+</div>
+
+<div class="maindiv">
+    <form id="myForm" action="/donated" method="post">
+    <div class="parentdiv">
+        <h2>Shedule your pickup</h2>
+        <!-- <div class="wrapper"> -->
+
+            <div class="date-time-picker">
+                <div class="calendar">
+                    <h2>Select Date:</h2>
+                    <input type="date" class="date" name="date">
+                </div>
+                <div class="timeslots">
+                    <h2>Select Time:</h2>
+                    <label class="time-option">
+                        <input type="radio" name="time" value="9:00 AM"> 9:00 AM
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="time-option">
+                        <input type="radio" name="time" value="12:00 PM"> 12:00 PM
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="time-option">
+                        <input type="radio" name="time" value="3:00 PM"> 3:00 PM
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="time-option">
+                        <input type="radio" name="time" value="6:00 PM"> 6:00 PM
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+        <!-- </div> -->
+        <input type="hidden" name="donationId" value="<%= donationId %>">
+        <input type="submit" value="Submit" class="submit">
+    </form>
+    </div>
+
+</div>
+
+<script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+        const currentDate = new Date();
+        const enteredDate = new Date(document.getElementsByName("date")[0].value.trim());
+    
+        // Check if the entered date is valid and not in the past
+        if (isNaN(enteredDate.getTime()) || currentDate >= enteredDate) {
+            event.preventDefault();
+            alert("Please enter a valid future date.");
+        } else {
+            alert("Thank you! Donation submitted successfully.");
+        }
+    });
+    </script>
+
+
+</body>
+</html>
+
